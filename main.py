@@ -1,8 +1,8 @@
 import streamlit as st
 
+st.title("Happy 1st Wedding Anniversary, My Love, 은순")
 
 def main_page():
-    st.title("Happy 1st Wedding Anniversary, My Love, 은순이!")
     st.markdown("## 당신의 남편은 당신을 진심으로 사랑합니다. 결혼기념일이 조금 지났지만 근사한 식사를 대접하고 싶어합니다.")
     st.write("다음 중 어떤 것을 선택하시겠습니까?")
 
@@ -42,7 +42,9 @@ def show_map():
     st.markdown(map_code, unsafe_allow_html=True)
 
     st.markdown("---")
-    st.markdown("# 미안해.. 고마워.. 그리고 정말 사랑해 ❤️")
+    st.markdown("# 늦어서 미안해..")
+    st.markdown("# 진심으로 고마워..")
+    st.markdown("# 그리고 정말 사랑해 ❤️")
     st.write("장모님이랑 가기 싫다고 했을 때, 그냥 나랑 가자고 말할껄 그랬어 ㅠ")
 
 def main():
