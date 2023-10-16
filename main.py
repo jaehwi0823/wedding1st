@@ -29,13 +29,13 @@ def accept_page():
         st.session_state.selected_date = SELECTED_DATE
 
         if st.button("날짜 확인"):
-            show_map()
+            show_map(SELECTED_DATE)
 
     else:
-        show_map()
+        show_map(SELECTED_DATE)
 
-def show_map():
-    st.markdown(f"# {st.session_state.selected_date}에 둘이 오붓하게 식사해요! 제발요... 바로 예약해볼게요!!")
+def show_map(date):
+    st.markdown(f"# {date}에 둘이 오붓하게 식사해요! 제발요... 바로 예약해볼게요!!")
 
     st.write("만나게 될 장소의 지도입니다:")
     map_code = '''<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.5049859902683!2d127.04194717597568!3d37.566724872038556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4aac8b27bd3%3A0x7538e53249f6fe04!2z67O47JWk67iM66CI65Oc!5e0!3m2!1sko!2skr!4v1697465385271!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'''
