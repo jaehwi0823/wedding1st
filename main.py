@@ -48,6 +48,7 @@ def show_map():
         st.markdown("### 진심으로 고마워..")
         st.markdown("### 그리고 정말 사랑해 ❤️")
         st.write("장모님이랑 가기 싫다고 했을 때, 그냥 나랑 가자고 말할껄 그랬어 ㅠ")
+        st.write("작년부터 자기를 꼭 데려가고 싶은 식당이었어요.")
 
 def main():
     if 'page' not in st.session_state:
